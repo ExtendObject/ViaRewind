@@ -146,7 +146,7 @@ public class ArmorStandReplacement implements EntityReplacement {
 			PacketWrapper teleportSkull = new PacketWrapper(0x18, null, user);
 			teleportSkull.write(Type.INT, entityIds[0]);
 			teleportSkull.write(Type.INT, (int) (locX * 32.0));
-			teleportSkull.write(Type.INT, (int) ((locY + (small ? 56 : 57)) * 32.0));  //Don't ask me where this offset is coming from
+			teleportSkull.write(Type.INT, (int) ((locY + (small ? 55 : 56)) * 32.0));  //Don't ask me where this offset is coming from
 			teleportSkull.write(Type.INT, (int) (locZ * 32.0));
 			teleportSkull.write(Type.BYTE, (byte) 0);
 			teleportSkull.write(Type.BYTE, (byte) 0);
@@ -154,7 +154,7 @@ public class ArmorStandReplacement implements EntityReplacement {
 			PacketWrapper teleportHorse = new PacketWrapper(0x18, null, user);
 			teleportHorse.write(Type.INT, entityIds[1]);
 			teleportHorse.write(Type.INT, (int) (locX * 32.0));
-			teleportHorse.write(Type.INT, (int) ((locY + 56.75) * 32.0));
+			teleportHorse.write(Type.INT, (int) ((locY + 55) * 32.0));
 			teleportHorse.write(Type.INT, (int) (locZ * 32.0));
 			teleportHorse.write(Type.BYTE, (byte) 0);
 			teleportHorse.write(Type.BYTE, (byte) 0);
